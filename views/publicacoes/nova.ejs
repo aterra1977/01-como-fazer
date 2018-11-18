@@ -7,17 +7,17 @@
     </div>
 
     <div class="form-group">
-            <label for="categoria">Categoria</label>            
+            <label for="categoria">Categoria</label>
             <select class="form-control" id="categoria" name="categoria">
-                <% categorias.forEach (categoria =>  { %>
-                 <option value="<%= categoria.id %>"><%= categoria.categoria %> </option>
+                <% categorias.forEach(categoriaNew => { %>
+                    <option value="<%= categoriaNew.id %>"><%= categoriaNew.categoria %></option>
                 <% }) %>
-            </select>            
+            </select>
     </div>
 
     <div class="form-group">
              <label for="conteudo">Conteúdo</label>
-             <textarea class="form-control" id="conteudo" name="conteudo" placeholder="Insira o conteúdo"  ></textarea >
+             <textarea  type="text" class="form-control" id="conteudo" name="conteudo" placeholder="Insira o conteúdo"  ></textarea >
     </div>
     <button type="submit" class="btn btn-light">Salvar</button>
 </form>
